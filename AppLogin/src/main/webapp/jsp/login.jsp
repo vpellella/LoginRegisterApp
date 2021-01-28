@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<div>
-			<img src="../images/FoodAgreement.JPG"  width="600" height="240"/>
+			<img src="../images/login.png"  width="600" height="240"/>
 		</div>
 		<div id="login">
 			<form method="post" action="userLogin">
