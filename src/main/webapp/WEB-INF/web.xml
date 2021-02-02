@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  
+  <display-name>AppLogin</display-name>
+  <welcome-file-list>
+    <welcome-file>jsp/login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
   <servlet>
     <description></description>
     <display-name>AppServlet</display-name>
     <servlet-name>AppServlet</servlet-name>
-    <servlet-class>com.appLogin.beans.controller.AppServlet</servlet-class>
+    <servlet-class>com.appLogin.controllers.AppServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AppServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
-  <display-name>AppLogin</display-name>
-  <welcome-file-list>
-    <welcome-file>jsp/login.jsp</welcome-file>
-  </welcome-file-list>
   <servlet>
     <description></description>
     <display-name>LoginServlet</display-name>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>com.appLogin.beans.controller.LoginServlet</servlet-class>
+    <servlet-class>com.appLogin.controllers.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
@@ -28,10 +31,11 @@
     <description></description>
     <display-name>RegistrationServlet</display-name>
     <servlet-name>RegistrationServlet</servlet-name>
-    <servlet-class>com.appLogin.beans.controller.RegistrationServlet</servlet-class>
+    <servlet-class>com.appLogin.controllers.RegistrationServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>RegistrationServlet</servlet-name>
     <url-pattern>/RegistrationServlet</url-pattern>
   </servlet-mapping>
+  
 </web-app>
